@@ -3,12 +3,15 @@
 	padding: 0;
 }
 
+.fa-solid{
+    font-size: 22px;
+}
 html{
     scroll-behavior: smooth;
 }
 @media only screen and (min-width: 1024px){
     header{
-        height: 40px;
+        height: 80px;
         position: -webkit-sticky;
         position: sticky;
         top: 35px;
@@ -16,6 +19,7 @@ html{
         display: flex;
         justify-content: center;
         align-items: center;
+        
         
         
     }
@@ -40,35 +44,40 @@ html{
         text-decoration: none;
         list-style: none;
         display: flex;
-        flex-wrap: nowrap;
         justify-content: center;
-        align-items: space;
-        align-content: space-between;
-        width: 100%;
-        overflow: auto;
+        align-items: center;
+        align-content: center;
+        width: 295px;
+        height: 48px;
         flex-direction: row;
+        
         
     }
     
     li{
-        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         align-content: center;
         width: 100%;
-       
         
+      
     }
     li a{
         text-align: center;
-        margin-left: 25px;
-        margin-right: 25px;
+        
         font-family: 'Roboto', sans-serif;
         font-weight: bolder;
         z-index: 1000;
+        width: 80px;
+        height: 30px;
+        padding-top: 12px;
         
+       
+        
+
     }
+    
     
     
     main{
@@ -76,6 +85,7 @@ html{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
     h1{
         margin-top: 150px;
@@ -275,75 +285,16 @@ html{
         color: #000000;
     }
 }
-header{
-    height: 40px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 35px;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
-}
-nav{
-    height: 48px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 30px;
-    background: #e8e5e480;
-    backdrop-filter: saturate(180%) blur(10px);
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    border-radius: 50px;
-    
-}
 
 
-ul{
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: space;
-    align-content: space-between;
-    width: 100%;
-    overflow: auto;
-    flex-direction: row;
-    
-}
 
-li{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 100%;
-    
-}
-li a{
-    text-align: center;
-    margin-left: 25px;
-    margin-right: 25px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-    
-    
-}
+
+
+
 
 /*CLASE CREADA PARA AGREGARSE AL CLICK*/
 .init{
     background-color: #fff;
-    margin-left: 2px;
-    margin-right: 2px;
-    padding-top: 12px;
-    padding-bottom: 12px;
     border-radius: 50px;
     
 }
@@ -506,7 +457,9 @@ h3{
 }
 
 h3 a{
-    color: #7f7f7f;
+    
+    color: #012342;
+    
 }
 
 .contacto-link:hover{
@@ -557,19 +510,23 @@ footer div a{
 /*MOBILE*/
 @media only screen and (max-width: 576px) {
     header{
-        
-        height: 0px;
+        height: 80px;
         position: -webkit-sticky;
         position: sticky;
-        top: 80px;
+        top: 35px;
         z-index: 1000;
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
         
         
     }
     nav{
-
-        top: 35px;
+        height: 48px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 30px;
         background: #e8e5e480;
         backdrop-filter: saturate(180%) blur(10px);
         z-index: 1000;
@@ -579,6 +536,46 @@ footer div a{
         width: 300px;
         border-radius: 50px;
         
+    }
+    
+    
+    ul{
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 300px;
+        height: 48px;
+        flex-direction: row;
+        
+        
+    }
+    
+    li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        
+      
+    }
+    li a{
+        text-align: center;
+        
+        font-family: 'Roboto', sans-serif;
+        font-weight: bolder;
+        z-index: 1000;
+        width: 100px;
+        height: 33px;
+        padding-top: 12px;
+        
+        margin: 0;
+       
+        
+
     }
 
     h1{
@@ -602,7 +599,7 @@ footer div a{
     }
     
     main{
-        width: 100vw;
+        width: 100%;
         
         display: flex;
         flex-direction: column;
@@ -673,7 +670,7 @@ footer div a{
         position: absolute;
         display: flex;
         height: 250px;
-        width: 100vw;
+        width: 100%;
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
         flex-direction: column;
@@ -725,18 +722,23 @@ footer div a{
 
 @media only screen and (min-width: 577px) and (max-width: 1023px) {
     header{
-        
-        height: 0px;
+        height: 80px;
         position: -webkit-sticky;
         position: sticky;
-        top: 80px;
+        top: 35px;
         z-index: 1000;
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
         
     }
     nav{
-
-        top: 35px;
+        height: 48px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 30px;
         background: #e8e5e480;
         backdrop-filter: saturate(180%) blur(10px);
         z-index: 1000;
@@ -746,6 +748,46 @@ footer div a{
         width: 300px;
         border-radius: 50px;
         
+    }
+    
+    
+    ul{
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 300px;
+        height: 48px;
+        flex-direction: row;
+        
+        
+    }
+    
+    li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        
+      
+    }
+    li a{
+        text-align: center;
+        
+        font-family: 'Roboto', sans-serif;
+        font-weight: bolder;
+        z-index: 1000;
+        width: 100px;
+        height: 33px;
+        padding-top: 12px;
+        
+        margin: 0;
+       
+        
+
     }
 
     h1{
@@ -769,7 +811,7 @@ footer div a{
     }
     
     main{
-        width: 100vw;
+        width: 100%;
         
         display: flex;
         flex-direction: column;
@@ -781,6 +823,7 @@ footer div a{
         height: auto;
         border-radius: 10px;
         z-index: 19;
+        
     }
     
     
@@ -840,7 +883,7 @@ footer div a{
         position: absolute;
         display: flex;
         height: 250px;
-        width: 100vw;
+        width: 100%;
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
         flex-direction: column;
